@@ -9,9 +9,12 @@
 
 > Transform SQL schemas to MongoDB, Cassandra, and Neo4j with AI-powered analysis, parallel execution, and stunning 3D visualizations.
 
-<div align="center">
-  <img src="docs/assets/demo.gif" alt="Demo" width="800"/>
-</div>
+<img width="1902" height="871" alt="Capture d&#39;écran 2026-04-28 151747" src="https://github.com/user-attachments/assets/49bba612-2837-4190-b736-556a28577812" />
+<br>
+<img width="1898" height="862" alt="Capture d&#39;écran 2026-04-28 151814" src="https://github.com/user-attachments/assets/8606402c-21ab-4b16-958e-bf847fc410a7" />
+<br>
+<img width="1893" height="866" alt="Capture d&#39;écran 2026-04-28 152017" src="https://github.com/user-attachments/assets/7aefdeba-ea51-4b87-988d-06026920816a" />
+
 
 ## 🌟 Highlights
 
