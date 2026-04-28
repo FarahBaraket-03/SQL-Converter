@@ -1,0 +1,35 @@
+services:
+  # Backend API Service
+  - type: web
+    name: sql-nosql-converter-api
+    runtime: python
+    region: oregon
+    plan: free
+    branch: main
+    rootDir: backend
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: AI_PROVIDER
+        value: blazeapi
+      - key: BLAZEAPI_API_KEY
+        sync: false  # Set manually in Render dashboard
+      - key: BLAZEAPI_BASE_URL
+        value: https://blazeai.boxu.dev/api/
+      - key: BLAZEAPI_MODEL
+        value: claude-opus-4-7
+      - key: OLLAMA_BASE_URL
+        value: http://localhost:11434
+      - key: OLLAMA_MODEL
+        value: mistral
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: DEBUG
+        value: false
+      - key: CORS_ORIGINS
+        value: https://sql-nosql-converter.vercel.app,http://localhost:3000
+      - key: PYTHON_VERSION
+        value: 3.11.9
+    healthCheckPath: /

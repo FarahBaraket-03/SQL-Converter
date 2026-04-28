@@ -129,3 +129,5 @@ credentials/
 *.pid
 *.seed
 *.pid.lock
+
+DEPLOY*
