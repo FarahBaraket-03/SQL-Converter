@@ -29,7 +29,7 @@ services:
       - key: DEBUG
         value: false
       - key: CORS_ORIGINS
-        value: https://sql-nosql-converter.vercel.app,http://localhost:3000
+        value: https://sql-converter-navy.vercel.app
       - key: PYTHON_VERSION
         value: 3.11.9
     healthCheckPath: /
